@@ -1,4 +1,3 @@
-
 serverAddress = 'https://farasalamat.ir:8080';
 
 loginAddress = serverAddress + '/auth/vault';
