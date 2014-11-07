@@ -1,0 +1,155 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="farasalamat.css"/>
+        <link rel="icon" type="image/png" href="images/favicon.png"/>
+        <script type="text/javascript" src="js/scripts.js"></script>
+        <script type="text/javascript" src="js/moment.js"></script>
+        <script type="text/javascript" src="js/moment-jalaali.js"></script>
+     </head>
+     <title> خدمات انفورماتیک فراسلامت 
+     </title>
+
+     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+     <meta http-equiv="Content-Language" content="fa"/>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+<body>
+    <div class='main'>
+        <div class="stripe">
+            <div class='farabar'>
+                <div class='logo'>
+                </div>
+                <div class='company'>
+                </div>
+            </div>
+        <div class='client'>
+            <div class='login' id='logindiv'>
+                <div class='avatar'>
+                </div>
+                <div class='inputdiv usernamediv'>
+                    <input type='text' class='usernameinput' id='username' placeholder='Username' autofocus>
+                </div>
+                <div class='inputdiv passworddiv'>
+                    <input type='password' class='passwordinput' id='password' onkeypress='{passwordInputPressed(event);}' placeholder='Password'/>
+                </div>
+                <div class='inputdiv signindiv'>
+                    <input type='button' class='loginbutton button blue' onclick='{login();}' value='Sign In'>
+                </div>
+                <div class='inputdiv forgotpassworddiv'>
+                    <a href='javascript:forgotPassword();'>Forgot Password?</a>
+                </div>
+            </div>
+            <div class='physicians' id='physicians'>
+                <div class='physician'>
+                    <div class='physicianinfo'>
+                        <div class='physicianinfolabel' id='physicianinfolabeltitle'>
+                        </div>
+                        <div class='infolabelright physicianfirstname'> : نام
+                        </div>
+                        <div class='infolabelvalueright physicianfirstname' id='physicianfirstname'>
+                        </div>
+                        <div class='infolabelright physicianlastname'> : شهرت
+                        </div>
+                        <div class='infolabelvalueright physicianlastname' id='physicianlastname'>
+                        </div>
+                        <div class='infolabelright nezampezeshki'> : نظام پزشکی‌
+                        </div>
+                        <div class='infolabelvalueright nezampezeshki' id='nezampezeshki'>
+                        </div>
+                    </div>
+                    <div class='ad'> آگهی‌های پزشکی‌
+                    </div>
+                </div>
+                <div class='patients'>
+                    <div class='patientsearchdiv'>
+                        <input type='text' class='patientsearchinput' id='patientsearch' onkeypress='{patientSearchInputPressed(event);}' placeholder='کد ملی‌ یا شناسه‌ ‌ی بیمه بیمار' autocomplete='off' autofocus>
+                        <input type='button' class='patientsearchbutton button blue' onclick='{getPatientInfo();}' value='جستجو'>
+                    </div>
+                    <div class='patient' id='patient'>
+                        <div class='patientinfo' id='patientinfo'>
+                            <div class='patientinfolabel'> مشخصات بیمه‌ شده
+                            </div>
+                            <div class='infolabelright patientfirstname'> : نام
+                            </div>
+                            <div class='infolabelvalueright patientfirstname' id='patientfirstname'>
+                            </div>
+                            <div class='infolabelright patientlastname'> : شهرت
+                            </div>
+                            <div class='infolabelvalueright patientlastname' id='patientlastname'>
+                            </div>
+                            <div class='infolabelright patientmellicode'> : کد ملی‌
+                            </div>
+                            <div class='infolabelvalueright patientmellicode' id='patientmellicode'>
+                            </div>
+                            <div class='infolabelmiddle patientgender'> : جنس
+                            </div>
+                            <div class='infolabelvaluemiddle patientgender' id='patientgender'>
+                            </div>
+                            <div class='infolabelmiddle patientage'> : سن
+                            </div>
+                            <div class='infolabelvaluemiddle patientage' id='patientage'>
+                            </div>
+                            <div class='infolabelmiddle patientspecial'> : خاص
+                            </div>
+                            <div class='infolabelvaluemiddle patientspecial' id='patientspecial'>
+                            </div>
+                            <div class='infolabelleft insurancecompany'> : بیمه‌
+                            </div>
+                            <div class='infolabelvalueleft insurancecompany' id='insurancecompany'>
+                            </div>
+                            <div class='infolabelleft insurancenumber'> : شماره
+                            </div>
+                            <div class='infolabelvalueleft insurancenumber' id='insurancenumber'>
+                            </div>
+                            <div class='infolabelleft insuranceexpdate'> : اعتبار
+                            </div>
+                            <div class='infolabelvalueleft insuranceexpdate' id='insuranceexpdate'>
+                            </div>
+                            <div class='prescriptionbuttons' id='prescriptionbuttons'>
+                                <div class='prescriptionbuttonsleft'>
+                                    <input type='button' class='newprescriptionbutton button blue' onclick='{createNewPrescription();}' value=' نگارش نسخه جدید '>
+                                </div>
+                                <div class='prescriptionbuttonsright'>
+                                    <input type='button' class='prescriptionhistorybutton button blue' id='historybutton' onclick='{prescriptionHistory();}' value=' نسخه‌های پیشین '>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='prescriptions' id='prescriptions'>
+                            <div class='prescriptiontitles' id='prescriptiontitles'>
+                                <div class='drugnametitle'>نام دارو
+                                </div>
+                                <div class='drugshapetitle'>شکل دارو
+                                </div>
+                                <div class='drugstrengthtitle'>قدرت دارو
+                                </div>
+                            </div>
+                            <div class='newprescription' id='newprescription'>
+                                    <div class='newprescriptionitems' id='newprescriptionitems'>
+                                    </div>
+                                <div class='newprescriptioncontrols' id='newprescriptioncontrols'>
+                                    <input type='button' class='addprescriptionitembutton button blue' id='addprescriptionitem' onclick='{addPrescriptionItem();}' value='افزودن قلم دارو'>
+                                    <input type='button' class='cancelprescriptionbutton button blue' id='cancelprescription' onclick='{cancelPrescription();}' value='انصراف'>
+                                    <input type='button' class='sendprescriptionbutton button blue' id='sendprescription' onclick='{sendPrescription();}' value='ارسال نسخه'>
+                                </div>
+                                <div class='drugnamehint' id='drugnamehint'>
+                                </div>
+                            </div>
+                            <div class='prescriptionhistory' id='prescriptionhistory'>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='patientnotfound' id='patientnotfound'>
+                    </div>
+                </div>
+            </div>
+            <div class='pharmacists'>
+            </div>
+        </div>
+            <div class='footer'>
+                <a href='javascript:aboutUs();'> درباره ما </a> | <a href='javascript:contactUs();'> تماس با ما </a> | <a href='javascript:questions();'> پرسش و پاسخ </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

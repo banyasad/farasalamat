@@ -1,0 +1,926 @@
+body {
+margin: 0;
+padding: 0;
+background-color: #f7f7f7;
+color: #555555;
+}
+
+.main {
+display: table;
+margin: 0 auto;
+padding: 0;
+height: 100%;
+}
+
+.stripe {
+position: relative;
+min-height:580px;
+top: 0px;
+height: 100%;
+width: 1000px;
+border-left: solid;
+border-right: solid;
+border-width: 1px;
+border-color: #d2cfb7;
+box-shadow: 0px 0px 10px #777777;
+}
+
+.farabar {
+position: absolute;
+background-color: #326295;
+top: 0px;
+width: 100%;
+height: 50px;
+}
+
+.logo {
+position: absolute;
+top: 12px;
+left: 12px;
+width: 25px;
+height: 25px;
+background: url(images/shadfard-white.png) no-repeat;
+background-size: cover;
+}
+
+.company {
+position: absolute;
+top: 5px;
+left: 50px;
+width: 140px;
+height: 40;
+background: url(images/title-white.png) no-repeat;
+background-size: cover;
+}
+
+.client {
+position: absolute;
+width: 100%;
+top: 50px;
+height: 500px;
+background-repeat: no-repeat;
+background-position: center;
+background-size: contain;
+overflow: hidden;
+scroll: off;
+}
+
+.login {
+position: relative;
+margin-left:auto;
+margin-right:auto;
+background-color: #efefef;
+top: 70px;
+width: 320px;
+height: 370px;
+border-radius: 5px;
+box-shadow: 0px 0px 10px #777777;
+}
+
+.avatar {
+position: relative;
+margin-left:auto;
+margin-right:auto;
+top: 50px;
+width: 100px;
+height: 100px;
+background: url(images/shadfard-blue.png) no-repeat;
+background-size: cover;
+border-radius: 5px;
+}
+
+.inputdiv {
+position: relative;
+margin-left:auto;
+margin-right:auto;
+width: 250px;
+height: 40px;
+border-style : solid;
+border-color : #d3d3d3;
+border-width : 1px;
+}
+
+.usernamediv {
+top: 70px;
+border-bottom : none;
+}
+
+.passworddiv {
+top: 71px;
+}
+
+.signindiv {
+top: 80px;
+border: none;
+}
+
+.usernameinput {
+width: 100%;
+height: 100%;
+font-size: 18px;
+border : 0;
+padding: 5px;
+}
+
+.passwordinput {
+width: 100%;
+height: 100%;
+font-size: 18px;
+border : 0;
+padding: 5px;
+}
+
+.loginbutton {
+font-size: 18px;
+vertical-align: middle;
+width: 100%;
+height: 100%;
+}
+
+.forgotpassworddiv {
+top: 100px;
+border: none;
+font-size: 14px;
+text-align: right;
+}
+
+.physicians {
+position: absolute;
+display: none;
+top: 0px;
+bottom: 0px;
+width: 100%;
+background-color: #f7f7f7;
+}
+
+.physician {
+position: absolute;
+top: 20px;
+bottom: 0px;
+left: 0px;
+width: 249px;
+background-color: #f7f7f7;
+background-color: #f7f7f7;
+border-right-width : 1px;
+border-right-style: solid;
+border-right-color: #d2d2d2;
+}
+
+.patients {
+position: absolute;
+top: 20px;
+bottom: 0px;
+left: 250px;
+right: 0px;
+background-color: #f7f7f7;
+
+}
+
+.patientsearchdiv {
+position: absolute;
+top: 0px;
+left: 30px;
+right: 100px;
+background-color: #ffffff;
+height: 40px;
+border-style : solid;
+border-color : #d3d3d3;
+border-width : 1px;
+}
+
+.patientsearchinput {
+position: absolute;
+width: 100%;
+height: 100%;
+left: 0px;
+font-size: 18px;
+border : 1px;
+border-style: solid;
+border-color: #ffffff;
+padding: 5 50px;
+text-align:right;
+background: url(images/search.png) right no-repeat;
+}
+
+.patientsearchbutton {
+position: absolute;
+width: 70px;
+height: 100%;
+top: 0px;
+right: -75px;
+font-size: 12px;
+text-align:center;
+}
+
+input.patientsearchinput:hover {
+border-color: #c2c2c2;
+}
+
+.physicianinfo{
+position: absolute;
+width: 100%;
+top: 0px;
+left: 0px;
+bottom: 0px;
+}
+
+.infolabelright {
+position: absolute;
+right: 10px;
+width: 90px;
+height: 20px;
+text-align: right;
+-webkit-user-select: none; /* Chrome/Safari */
+-moz-user-select: none;    /* Firefox       */
+-ms-user-select: none;     /* IE10+         */
+}
+
+.infolabelvalueright {
+position: absolute;
+right: 100px;
+width: 150px;
+height: 20px;
+text-align: right;
+font-weight: bold;
+-webkit-user-select: none; /* Chrome/Safari */
+-moz-user-select: none;    /* Firefox       */
+-ms-user-select: none;     /* IE10+         */
+}
+
+.infolabelmiddle {
+position: absolute;
+right: 260px;
+width: 90px;
+height: 20px;
+text-align: right;
+-webkit-user-select: none; /* Chrome/Safari */
+-moz-user-select: none;    /* Firefox       */
+-ms-user-select: none;     /* IE10+         */
+}
+
+.infolabelvaluemiddle {
+position: absolute;
+right: 350;
+width: 70px;
+height: 20px;
+text-align: right;
+font-weight: bold;
+-webkit-user-select: none; /* Chrome/Safari */
+-moz-user-select: none;    /* Firefox       */
+-ms-user-select: none;     /* IE10+         */
+}
+
+.infolabelleft {
+position: absolute;
+right: 430px;
+width: 90px;
+height: 20px;
+text-align: right;
+-webkit-user-select: none; /* Chrome/Safari */
+-moz-user-select: none;    /* Firefox       */
+-ms-user-select: none;     /* IE10+         */
+}
+
+.infolabelvalueleft {
+position: absolute;
+right: 510;
+width: 150px;
+height: 20px;
+text-align: right;
+font-weight: bold;
+-webkit-user-select: none; /* Chrome/Safari */
+-moz-user-select: none;    /* Firefox       */
+-ms-user-select: none;     /* IE10+         */
+}
+
+.physicianinfolabel {
+position: absolute;
+top: 10px;
+width: 100%;
+text-align: center;
+font-weight: bold;
+}
+
+.physicianfirstname {
+top: 50px;
+}
+
+.physicianlastname {
+top: 80px;
+}
+
+.nezampezeshki {
+top: 110px;
+}
+
+.patient {
+position: absolute;
+display: none;
+top:55px;
+left: 20px;
+right: 20px;
+bottom: 0px;
+border-width : 0px;
+}
+
+.patientinfo {
+position: absolute;
+top:0px;
+bottom: 0px;
+left: 0px;
+right: 0px;
+min-width: 670px;
+}
+
+.patientinfolabel {
+position: absolute;
+width: 100%;
+top: 10px;
+text-align: center;
+font-weight: bold;
+}
+
+.patientfirstname {
+top: 50px;
+}
+
+.patientlastname {
+top: 80px;
+}
+
+.patientmellicode {
+top: 110px;
+}
+
+.patientgender {
+top: 50px;
+}
+
+.patientage {
+top: 80px;
+}
+
+.patientspecial {
+top: 110px;
+}
+
+.insurancecompany {
+top: 50px;
+}
+
+.insurancenumber {
+top: 80px;
+}
+
+.insuranceexpdate {
+top: 110px;
+}
+
+.patientnotfound {
+position: absolute;
+height : 50px;
+top: 150px;
+left: 50px;
+right: 50px;
+text-align: center;
+}
+
+.prescriptionbuttons {
+position: absolute;
+width:100%;
+height: 30px;
+top:150px;
+}
+
+.prescriptionbuttonsleft {
+position: absolute;
+width:50%;
+height: 100%;
+top: 0px;
+left: 0px;
+}
+
+.prescriptionbuttonsright {
+position: absolute;
+width:50%;
+height: 100%;
+top: 0px;
+right: 0px;
+}
+
+.newprescriptionbutton {
+display: table;
+margin: 0 auto;
+height: 100%;
+font-size: 18px;
+}
+
+.prescriptionhistorybutton {
+display: table;
+margin: 0 auto;
+height: 100%;
+font-size: 18px;
+}
+
+.prescriptions {
+position: absolute;
+top:200px;
+bottom: 0px;
+left: 0px;
+right: 0px;
+border-width : 1px;
+border-style: solid;
+border-radius: 5px;
+border-color: #d2d2d2;
+overflow: hidden;
+}
+
+.ad {
+position: absolute;
+height: 200px;
+padding-top: 70px;
+left: 20px;
+right: 20px;
+bottom: 0px;
+border-width: 1px;
+border-style: solid;
+border-color: #d2d2d2;
+border-radius: 5px;
+text-align: center;
+vertical-align: middle;
+}
+
+.footer {
+position: absolute;
+top: 575px;
+left:0px;
+width: 100%;
+height: 40px;
+text-align: center;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+a:link {text-decoration: none;}
+a:link {color: #326295;}
+a:visited {text-decoration: none;}
+a:hover {color: orange;}
+a:active {text-decoration: none;}
+a:link{font-family:Sans-Serif;}
+
+
+.button {
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+text-decoration: none;
+text-align: center;
+font-weight: bold;
+border-style: solid;
+border-width: 1px;
+border-color: #d2cfb7;
+border-radius: 5px;
+cursor: pointer;
+color: #ffffff;
+background-size: 100%;
+font-size: inherit;
+-webkit-font-smoothing: antialiased;
+-webkit-user-select: none; /* Chrome/Safari */
+-moz-user-select: none;    /* Firefox       */
+-ms-user-select: none;     /* IE10+         */
+}
+
+.blue {
+background-color: #326295;
+background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #72a2d5), color-stop(100%, #29722e));
+background-image: -webkit-linear-gradient(#72a2d5, #326295);
+background-image: -moz-linear-gradient(#72a2d5, #326295);
+background-image: -o-linear-gradient(#72a2d5, #326295);
+background-image: linear-gradient(#72a2d5, #326295);
+}
+
+input.button:hover {
+border: none;
+}
+
+input.button:disabled {
+opacity: 0.4;
+}
+
+.newprescription {
+position: absolute;
+display: none;
+top: 30px;
+bottom: 10px;
+width: 100%;
+overflow-y: auto;
+overflow-x: hidden;
+}
+
+.prescriptionhistory {
+position: absolute;
+display: none;
+background-color: white;
+top: 0px;
+width: 100%;
+height: 100%;
+overflow-y: auto;
+overflow-x: hidden;
+}
+
+.prescriptionTitles {
+position: absolute;
+display: none;
+top:10px;
+width: 100%;
+height: 20px;
+font-family: Sans-Serif;
+font-size: 12px;
+}
+
+.drugnametitle {
+position: absolute;
+width: 333px;
+left: 10px;
+text-align: center;
+}
+
+.drugshapetitle {
+position: absolute;
+width: 150px;
+left: 355px;
+text-align: center;
+}
+
+.drugstrengthtitle {
+position: absolute;
+width: 150px;
+left: 515px;
+text-align: center;
+}
+
+.prescriptionitem {
+position: absolute;
+left: 0px;
+right:0px;
+height: 65px;
+}
+
+.drugnameinput {
+position: absolute;
+top: 10px;
+left: 10px;
+width:333px;
+height: 20px;
+}
+
+.drugshapeselect {
+position: absolute;
+top: 10px;
+left: 355px;
+width:150px;
+height: 20px;
+}
+
+.drugstrengthselect {
+position: absolute;
+top: 10px;
+left: 515px;
+width:150px;
+height: 20px;
+}
+
+.drugnoteinput {
+position: absolute;
+top: 35px;
+left: 10px;
+width: 190px;
+height: 20px;
+direction:rtl;
+}
+
+.drugrouteselect {
+position: absolute;
+top: 35px;
+left: 210px;
+width: 184px;
+height: 20px;
+direction:rtl;
+}
+
+.drugdosageinput {
+position: absolute;
+top: 35px;
+left: 395px;
+width:35px;
+height: 20px;
+}
+
+.drugintervalselect {
+position: absolute;
+top: 35px;
+left: 439;
+width:55px;
+height: 20px;
+direction:rtl;
+}
+
+.drugintervalvalueinput {
+position: absolute;
+top: 35px;
+left: 495;
+width:35px;
+height: 20px;
+}
+
+.drugintervalprefix {
+position: absolute;
+top: 35px;
+left: 530px;
+width:35px;
+height: 19px;
+text-align: center;
+font-size: .8em;
+}
+
+.drugdurationselect {
+position: absolute;
+top: 35px;
+left: 565px;
+width:55px;
+height: 20px;
+direction:rtl;
+}
+
+.drugdurationvalueinput {
+position: absolute;
+top: 35px;
+left: 621px;
+width:35px;
+height: 20px;
+}
+
+.drugdurationprefix {
+position: absolute;
+top: 35px;
+left: 656px;
+width:35px;
+height: 19px;
+text-align: center;
+font-size: .8em;
+}
+
+.removeicon {
+position: absolute;
+top: 12px;
+left: 670px;
+width:15px;
+height: 15px;
+text-align: center;
+background: url(images/remove.png) no-repeat;
+background-size: cover;
+}
+
+.tooltip {
+top:-10px;
+right: 0px;
+width : 120px;
+background-color: #326295;
+color:white;
+border-radius:5px;
+opacity:0;
+visibility: hidden;
+position:absolute;
+-webkit-transition: opacity 0.5s;
+-moz-transition: opacity 0.5s;
+-ms-transition: opacity 0.5s;
+-o-transition: opacity 0.5s;
+transition: opacity 0.5s;
+}
+
+.removeicon:hover .tooltip{
+cursor: pointer;
+visibility: visible;
+opacity:1;
+}
+
+.newprescriptioncontrols {
+position: absolute;
+left: 0px;
+width: 100%;
+height: 30px;
+border: none;
+}
+
+.addprescriptionitembutton {
+position: absolute;
+left: 10px;
+width: 100px;
+height: 30px;
+border-radius: 5px;
+text-align: center;
+font-size: 12px;
+}
+
+.cancelprescriptionbutton {
+position: absolute;
+right: 120px;
+width: 100px;
+height: 30px;
+border-radius: 5px;
+text-align: center;
+font-size: 12px;
+}
+
+.sendprescriptionbutton {
+position: absolute;
+right: 10px;
+width: 100px;
+height: 30px;
+border-radius: 5px;
+text-align: center;
+font-size: 12px;
+}
+
+.newprescriptionitems {
+position: relative;
+width: 100%;
+height: 130px;
+top: 0px;
+left: 0px;
+overflow-y: auto;
+overflow-x: hidden;
+}
+
+.drugnamehint {
+position: absolute;
+display: none;
+width: 330px;
+left: 10px;
+cursor: pointer;
+border-style: solid;
+border-width: 1px;
+border-color: #d2cfb7;
+box-shadow: 0px 0px 10px #777777;
+}
+
+.drugnameoption {
+position: absolute;
+width: 100%;
+height: 20px;
+left: 0px;
+font-size: 10px;
+font-family: Sans-Serif;
+line-height:20px;
+background-color: #eeeeff;
+}
+
+.drugnameoption:hover{
+color: white;
+background-color: #326295;
+}
+
+.historyprescriptiondetails {
+width: 100%;
+font-size: 14px;
+font-family: Sans-Serif;
+line-height:28px;
+direction:rtl;
+}
+
+.historyprescriptionsummary {
+position: relative;
+left: 0px;
+padding-right: 20px;
+font-size: 14px;
+font-family: Sans-Serif;
+line-height:28px;
+cursor: pointer;
+direction:rtl;
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+
+.historyprescriptionitem {
+position: relative;
+display: none;
+padding-right: 150px;
+left: 0px;
+height: 50px;
+font-size: 12px;
+font-family: Sans-Serif;
+line-height:20px;
+background-color: white;
+}
+
+.historyprescriptioniteminfo {
+position: relative;
+width:100%;
+height: 25px;
+line-height:25px;
+text-align: right;
+direction:ltr;
+}
+
+.historyprescriptionitemorder {
+position: relative;
+width:100%;
+height: 25px;
+line-height:25px;
+direction:rtl;
+}
+
+.prescriptionitemstatusicon {
+position: absolute;
+top: 20px;
+left: 70px;
+width:10px;
+height: 10px;
+text-align: center;
+}
+
+.prescriptionitemcontrol {
+position: absolute;
+left: 100px;
+width:11px;
+height: 11px;
+padding: 0px;
+margin:0px;
+}
+
+.prescriptionitemcontrolfilled {
+top: 7px;
+}
+
+.prescriptionitemcontrolpartiallyfilled {
+top: 32px;
+}
+
+.prescriptionitemcontrollabel {
+position: absolute;
+left: 10px;
+width:80px;
+height: 25px;
+line-height:25px;
+text-align: right;
+}
+.prescriptionitemcontrollabelfilled {
+top: 0px;
+}
+
+.prescriptionitemcontrollabelpartiallyfilled {
+top: 25px;
+}
+
+.prescriptionitemfilledicon {
+background: url(images/filled.png) no-repeat;
+background-size: cover;
+}
+
+.prescriptionitempartiallyfilledicon {
+background: url(images/partially-filled.png) no-repeat;
+background-size: cover;
+}
+
+.prescriptionitemnewicon {
+background: url(images/new.png) no-repeat;
+background-size: cover;
+}
+
+summary{
+outline:none;
+}
+
+.historyprescriptionsummarycontent {
+position: relative;
+width:100%;
+text-align: right;
+direction:rtl;
+}
+
+.historyprescriptionstatusicon {
+position: absolute;
+top: 10px;
+left: 50px;
+width:10px;
+height: 10px;
+text-align: center;
+}
+
+.prescriptionfilledicon {
+background: url(images/locked.png) no-repeat;
+background-size: cover;
+}
+
+.prescriptionpartiallyfilledicon {
+background: url(images/partially-filled.png) no-repeat;
+background-size: cover;
+}
+
+.prescriptionnewicon {
+background: url(images/new.png) no-repeat;
+background-size: cover;
+}

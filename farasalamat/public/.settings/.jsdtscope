@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="routes/" kind="src" path="farasalamat"/>
+	<classpathentry kind="src" path="farasalamat/routes"/>
+	<classpathentry kind="src" path="js"/>
+	<classpathentry kind="con" path="org.eclipse.wst.jsdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path=""/>
+</classpath>
